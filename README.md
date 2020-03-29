@@ -1,0 +1,1 @@
+# effortless_fast_api
