@@ -6,3 +6,4 @@ __pycache__/
 
 effortless-fast-dev.db
 .pytest_cache
+.mypy_cache
