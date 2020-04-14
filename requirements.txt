@@ -1,0 +1,15 @@
+fastapi>=0.53, <1.0.0
+pydantic>=1.4.0,<2.0.0
+uvicorn
+aiofiles
+python-multipart
+pyhumps
+invoke
+sqlalchemy
+passlib
+pyjwt
+
+pylint
+black
+pytest
+mypy
