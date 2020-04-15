@@ -48,7 +48,7 @@ def login_access_token(
 
 @api.get("/")
 def hello_world():
-    return "Hello world!"
+    return "Hello World!"
 
 
 @api.get(

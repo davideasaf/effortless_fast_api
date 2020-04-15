@@ -15,27 +15,5 @@ class User(Base):
     is_active = Column(Boolean, default=True, server_default="true")
     created_datetime = Column(DateTime(), nullable=False, server_default=func.now())
 
-    @property
-    def rolenames(self):
-        try:
-            return self.roles.split(",")
-        except Exception:
-            return []
-
-    @classmethod
-    def lookup(cls, username: str):
-        return cls.query.filter_by(username=username).one_or_none()
-
-    @classmethod
-    def identify(cls, user_id: int):
-        return cls.query.get(user_id)
-
-    @property
-    def identity(self):
-        return self.user_id
-
-    def is_valid(self):
-        return self.is_active
-
     def __repr__(self):
         return f"<User {self.user_id} - {self.username}>"
